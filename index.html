@@ -20,10 +20,49 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(232,232,232,0.93
         background: rgb(255,255,255);
 background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(232,232,232,0.9304096638655462) 50%, rgba(255,255,255,0) 100%);
       }
-      
+      .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
     </style>
   </head>
   <body>
+    <button class="button" style="vertical-align:middle"><span>Hover </span></button>
     
  <div class="content">
     <h1>football</h1>
@@ -36,11 +75,13 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(232,232,232,0.93
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RVZxWjKXAyk?si=yx-YSKbl2MfLQe_m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<button>snake+game&sca_esv=590045679&rlz=1C1GCEJ_enGB1022GB1024&hl=en-GB&biw=1920&bih=963&ei=9fN3ZaSyMPO6i-gP3I2UoAY&oq=snake+&gs_lp=Egxnd3Mtd2l6LXNlcnAiBnNuYWtlICoCCAQyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAuGEMYgAQYigUyChAAGIAEGIoFGEMyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyBRAuGIAEMgUQLhiABDIFEAAYgARIqTVQ7gVYzBxwAngBkAEEmAGuAqAB5ROqAQcwLjYuMy4yuAEByAEA-AEBqAIDwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAg0QLhiABBiKBRhDGLADwgIOEAAY5AIY1gQYsAPYAQHCAhYQLhiABBiKBRhDGNQCGMgDGLAD2AECwgIKEC4YgAQYigUYQ8ICFhAAGAMYjwEY5QIY6gIYtAIYjAPYAQPCAhYQLhgDGI8BGOUCGOoCGLQCGIwD2AEDwgINEC4YgAQYigUYQxjUAsICDhAAGIAEGIoFGLEDGIMBwgIQEAAYgAQYigUYQxixAxiDAcICExAuGEMYgwEY1AIYsQMYgAQYigXiAwQYACBBiAYBkAYRugYGCAEQARgJugYGCAIQARgIugYECAMYCg&sclient=gws-wiz-serp</button>
-   
+<button>
+  click me
+</button>
 
 
    
    </div>
   </body>
 </html>
+  
